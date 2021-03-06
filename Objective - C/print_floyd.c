@@ -16,24 +16,21 @@
 
 void printFloyd()
 {
-    int i, j, rows;
+    int i, j, k, rows;
 
     printf("Enter The Number Of Rows: ");
     scanf("%d", &rows);
 
-    for (i = 1; i <= rows; i++)
+    for (j = 1; j <= rows; j++)
     {
-        for (j = 1; j <= i; j++)
+        i = (j % 2 == 1) ? 1 : 0;
+
+        for (k = 1; k <= j; k++)
         {
-            if (j % 2 == 1)
-            {
-                printf("1");
-            }
-            else
-            {
-                printf("0");
-            }
+            printf("%d ", i);
+            i = (i + 1) % 2;
         }
+
         putchar('\n');
     }
 }
