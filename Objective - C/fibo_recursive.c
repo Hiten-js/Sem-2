@@ -5,8 +5,7 @@
 ===========================================================================
 */
 
-// Write a program to ptint nth term of fibonnaci series upto the number
-// given by user.(Using recursion)
+// Write a program to ptint nth term of fibonnaci series (Using recursion)
 // Fibonaccci series: 1, 1, 2, 3, 5, 8, _ _ _
 
 int fibonacci(int n)
